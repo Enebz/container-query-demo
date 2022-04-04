@@ -2,8 +2,8 @@ import React from 'react'
 
 function Body(props) {
   return (
-    <div className='flex-1 w-full px-4 py-8'>
-      <div className='h-full max-w-content mx-auto'>
+    <div className='body-outer'>
+      <div className='body-inner'>
         {props.children}
       </div>
     </div>

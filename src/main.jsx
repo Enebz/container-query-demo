@@ -3,7 +3,6 @@ import { render } from 'react-dom';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import './index.css';
-import './tailwind.css';
 
 import Home from './pages/Home';
 import Demo from './pages/Demo';
@@ -21,9 +20,9 @@ if (!supportsContainerQueries) {
 function App() {
   return (
     <BrowserRouter>
-      <div className='flex flex-col w-full h-screen container-type-size'>
+      <div className='wrapper'>
         <Header />
-        <div className='flex flex-col w-full h-full overflow-y-auto overflow-x-hidden'>
+        <div className='scrollable-wrapper'>
           <Body>
             <Routes>
               <Route path='/'>
